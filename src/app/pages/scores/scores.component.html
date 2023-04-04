@@ -1,0 +1,28 @@
+<div class = "scores">
+    <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col" class="col-text">Position</th>
+            <th scope="col" class="col-text">Player</th>
+            <th scope="col" class="col-text">Victories</th>
+            <th scope="col" class="col-text">Matches</th>            
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let score of scoreList">
+                <td>
+                    <h3>#{{score.position}}</h3>
+                </td>
+                <td>
+                    <h3>{{score.player}}</h3>
+                </td>
+                <td>
+                    <h4>{{score.victories}}</h4>
+                </td>
+                <td>
+                    <h4>{{score.matches}}</h4>
+                </td>               
+            </tr>
+        </tbody>
+      </table>
+</div>

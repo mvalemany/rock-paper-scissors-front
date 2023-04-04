@@ -1,0 +1,9 @@
+.container-button {
+    margin: 5vw;    
+    font-family: 'AtariClassic';
+}
+
+.hover-color {
+    --bs-btn-hover-color: var(--home-color)
+}
+

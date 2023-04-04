@@ -1,0 +1,12 @@
+.match {
+    margin-top: 20%;
+    max-width: 100%;
+}
+
+.text-match {
+    white-space: nowrap;
+}
+
+.text-result {
+    font-family: 'AtariClassic';    
+}

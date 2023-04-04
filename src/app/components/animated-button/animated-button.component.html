@@ -1,0 +1,11 @@
+<div class="container-button">
+    <button 
+        type="button" 
+        class="btn btn-outline-dark rounded-pill hover-color" 
+        [@onHover]="isMouseOver ? 'over' : 'out'" 
+        (mouseover)=hover(true)
+        (mouseout)=hover(false)
+        (click)="click()"
+            >{{text}}
+    </button>
+</div>

@@ -1,0 +1,10 @@
+.scores {  
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.col-text {
+    font-family: 'AtariClassic'; 
+    text-transform: uppercase;
+}

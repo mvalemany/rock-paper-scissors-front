@@ -1,0 +1,26 @@
+<div class="container-full match" *ngIf="match">    
+    <div class="row text-center">
+        <div class="col">
+            <h2 class="text-match">{{match.playerTwo}}'s choice:</h2>
+            <h3 class="weapon-name">{{match.weaponPlayerTwo.name}}</h3>
+            <img *ngIf="match.weaponPlayerTwo"
+                class="weapon-image"
+                [src]="match.weaponPlayerTwo.image"
+                (error)="imageErrorHandler($event)" 
+            />
+        </div>
+        <div class="col">
+            <h2 class="text-match">{{match.playerOne}}'s choice:</h2>
+            <h3 class="weapon-name">{{match.weaponPlayerOne.name}}</h3>
+            <img *ngIf="match.weaponPlayerOne"
+                class="weapon-image"
+                [src]="match.weaponPlayerOne.image"
+                (error)="imageErrorHandler($event)" 
+            />
+        </div>
+    </div>
+    <div class="row text-center">
+        <h1 class="text-result">{{match.result}}</h1>
+    </div>
+</div>
+

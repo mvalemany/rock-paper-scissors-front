@@ -1,0 +1,15 @@
+.row-game {
+    display: flex; 
+    align-items: center; 
+    flex-wrap: wrap;
+    justify-content: center;    
+    position: relative;
+    top: 40%;
+    top: 30%;
+    margin: 5vh;
+}
+
+.table-game {
+    margin-left: auto;
+    margin-right: auto;
+}

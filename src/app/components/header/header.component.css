@@ -1,0 +1,13 @@
+.icon-display {
+    transform: scale(2);
+    color: var(--home-color);
+ }
+
+.text-header {
+    font-family: 'AtariClassic';
+    color: var(--home-color);    
+}
+
+.container-header {    
+    background-color: var(--header-color);
+}

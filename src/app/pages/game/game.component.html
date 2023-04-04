@@ -1,0 +1,28 @@
+<div class="container-full">
+    <div class="row-game">
+        <h1>Choose your weapon:</h1>
+    </div>
+    <div class="row-game">
+        <table class="table-game">
+            <tbody>
+                <tr *ngFor="let weapon of weaponList">
+                    <td>
+                        <h3 class="weapon-name">{{weapon.name}}</h3>
+                    </td>
+                    <td>
+                        <button
+                            type="button" 
+                            class="btn btn-outline-secondary rounded-pill border-0" 
+                            (click)="chooseWeapon(weapon.id)">                            
+                                <img 
+                                    class="weapon-image"
+                                    [src]="weapon.image"
+                                    (error)="imageErrorHandler($event)" 
+                                />
+                        </button>
+                    </td>       
+                </tr>
+            </tbody>
+        </table> 
+    </div>     
+</div>
